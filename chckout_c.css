@@ -70,6 +70,29 @@ header{
 input[type="search"] {
     -webkit-appearance: none;
 }
+.cart{
+    display: inline-block;
+    float: right;
+    margin-top: 14px;
+    margin-right: 40px;
+    width: 32px;
+}
+.header_btn{
+    display: flex;
+    width: 130px;
+    height: 38px;
+    background-color: #f16d7f;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-top: 30px;
+    float: right;
+    border-radius: 3%;
+}
+.header_btn span{
+    margin: auto;
+}
+
 .header_menu{
     height:50px;
     width:1142px;
@@ -118,7 +141,7 @@ main{
 .new_arrivals_box{
     width: 1140px;
     height: 148px;
-    margin: 0 auto;
+    margin: 0 auto 76px auto;
 }
 .new_arrivals_box h1{
     display: inline-block;
@@ -143,13 +166,121 @@ main{
     color:  #f16d7f;
     font-size: 16px
 }
+.checkout{
+    margin: 100px auto 100px auto;
+}
+.checkout_block{
+    margin: 0 auto;
+    width: 1140px;
+}
+details > summary::-webkit-details-marker {
+    display:none;
+}
+.checkout_block h1{
+    color:  #222222;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 16px;
+}
+.shipping_address{
+    float: left;
+    width:45%;
+    padding-left: 35px;
+    height: 450px;
 
+}
+.shipping_address h2{
+    color:  #222222;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 13px;
+}
+.shipping_address h3{
+    color:  #b3b2b2;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 13px;
+    text-align: left;
 
-
-
+}
+.shipping_address span{
+    color:  #f16d7f;
+}
+.radio_checkbox{
+    display: block;
+    color:  #222222;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 13px;
+    margin-top: 8px;
+}
+.radio_checkbox p{
+    display: inline-block;
+    padding-left: 20px;
+}
+.input [type="radio"]{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+.btn{
+    display: inline-block;
+    float: left;
+    border-style: solid;
+    border-width: 1px;
+    border-color:  #eaeaea;
+    box-sizing: border-box;
+    background-color:  #ffffff;
+    width: 180px;
+    height: 50px;
+    text-decoration: none;
+    margin-top: 38px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.btn:hover{
+    background:#f16d7f ;
+}
+.btn span{
+    text-decoration: none;
+    color:  #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 50px;
+}
+.email_input{
+    border-style: solid;
+    border-width: 1px;
+    border-color:  #eaeaea;
+    box-sizing: border-box;
+    background-color:  #ffffff;
+    width: 390px;
+    height: 45px;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 400;
+}
+.shipping_address h4{
+    color:  #222222;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    padding-top: 48px;
+    padding-left: 200px;
+}
 footer {
     width: 100%;
     margin: 0 auto;
+}
+.footer_top_back{
+    background-color: #e6e6e6;
 }
 .footer_top_background{
     background: url("img/Layer 41.jpg") ;
@@ -283,6 +414,9 @@ form input[type="submit"] {
     font-size: 16px;
     font-weight: 400;
     line-height: 29px;
+}
+.footer_buttom_back{
+    background-color: #e6e6e6;
 }
 .footer_buttom{
     width: 1140px;

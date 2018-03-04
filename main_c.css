@@ -36,7 +36,6 @@ header{
     display: inline-block;
 }
 .search {
-
     width: 318px;
     position: relative;
 }
@@ -76,6 +75,29 @@ header{
 input[type="search"] {
     -webkit-appearance: none;
 }
+.cart{
+    display: inline-block;
+    float: right;
+    margin-top: 14px;
+    margin-right: 40px;
+    width: 32px;
+}
+.header_btn{
+    display: flex;
+    width: 130px;
+    height: 38px;
+    background-color: #f16d7f;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-top: 30px;
+    float: right;
+    border-radius: 3%;
+}
+.header_btn span{
+    margin: auto;
+}
+
 .header_menu{
     height:50px;
     width:1142px;
@@ -234,9 +256,6 @@ main h4{
     margin: 0 32px 40px 0;
     float: left;
 }
-/*.main_items_cards:hover{*/
-    /*border: solid 0.1px #222222;*/
-/*}*/
 .main_items_cards:nth-child(4n){
     margin-right: 0;
 }
@@ -345,6 +364,9 @@ main a{
 footer {
     width: 100%;
     margin: 0 auto;
+}
+.footer_top_back{
+    background-color: #e6e6e6;
 }
 .footer_top_background{
     background: url("img/Layer 41.jpg") ;
@@ -478,6 +500,9 @@ form input[type="submit"] {
     font-size: 16px;
     font-weight: 400;
     line-height: 29px;
+}
+.footer_buttom_back{
+    background-color: #e6e6e6;
 }
 .footer_buttom{
     width: 1140px;
