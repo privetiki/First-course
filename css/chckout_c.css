@@ -243,17 +243,14 @@ details > summary::-webkit-details-marker {
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 40px;
+    color:  #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
 }
 .btn:hover{
     background:#f16d7f ;
 }
-.btn span{
-    text-decoration: none;
-    color:  #4a4a4a;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 50px;
-}
+
 .email_input{
     border-style: solid;
     border-width: 1px;
@@ -265,6 +262,7 @@ details > summary::-webkit-details-marker {
     padding: 10px;
     font-size: 13px;
     font-weight: 400;
+    margin: 15px 0;
 }
 .shipping_address h4{
     color:  #222222;
@@ -327,11 +325,11 @@ footer {
     text-align: center;
     margin-top: 0;
 }
-form input[type="email"] {
+.footer_email_input {
     background: #b2b2b2;
     color: white;
     width: 150px;
-    height: 30px;
+    height: 29px;
     border: none;
     outline: none;
     padding-left: 10px;
@@ -340,10 +338,10 @@ form input[type="email"] {
     left: 30%;
     border-radius:  50px 0 0 50px;
 }
-form input[type="emai"]:focus {
+.footer_email_input:focus {
     background: #d4ff91;
 }
-form input[type="submit"] {
+.submit_footer {
     background: #f16d7f;
     width: 71px;
     height: 31px;
@@ -352,7 +350,7 @@ form input[type="submit"] {
     font-weight: 400;
     border: none ;
     position: absolute;
-    top: 225px;
+    top: 224px;
     left: 58.2%;
     border-radius: 0 50px  50px 0;
 }
