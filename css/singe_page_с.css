@@ -171,16 +171,18 @@ main{
     background-color:  #f7f7f7;
     height: 777px;
 }
-.unit_img img{
+.unit_img_pic{
+    width: 600px;
     margin: 0 auto;
 }
 .unit_card{
-    margin: -86px auto 0 auto;
+    margin: -86px auto 200px auto;
     border: 1px solid #eaeaea;
     box-sizing: border-box;
     background-color:  #ffffff;
     width: 1141px;
     height: 730px;
+    position: relative;
 }
 .unit_card h4{
     color:  #f16d7f;
@@ -215,7 +217,7 @@ main{
     font-weight: 700;
     line-height: 24px;
     text-align: center;
-    margin-right: 20px;
+    margin-left: 300px;
 
 }
 .unit_card_details span{
@@ -226,11 +228,21 @@ main{
     text-align: center;
 }
 .unit_card_price{
+    display: block;
     color:  #ef5b70;
     font-size: 24px;
     font-weight: 700;
     line-height: 24px;
     text-align: center;
+}
+.selection{
+    border-style: solid;
+    border-width: 1px;
+    border-color:  #eaeaea;
+    box-sizing: border-box;
+    background-color:  #ffffff;
+    width: 144px;
+    height: 35px;
 }
 footer {
     width: 100%;
