@@ -185,6 +185,7 @@ main{
     position: relative;
 }
 .unit_card h4{
+    margin-top: 73px;
     color:  #f16d7f;
     font-size: 14px;
     font-weight: 700;
@@ -208,7 +209,7 @@ main{
     line-height: 24px;
     text-align: center;
     width: 537px;
-    margin: 0 auto;
+    margin: 67px auto 0 auto;
 }
 .unit_card_details{
     display: inline-block;
@@ -217,7 +218,8 @@ main{
     font-weight: 700;
     line-height: 24px;
     text-align: center;
-    margin-left: 300px;
+    margin-left: 350px;
+    text-transform: uppercase;
 
 }
 .unit_card_details span{
@@ -235,14 +237,88 @@ main{
     line-height: 24px;
     text-align: center;
 }
-.selection{
-    border-style: solid;
-    border-width: 1px;
+label{
+    text-transform: uppercase;
+    color:  #2f2f2f;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.left_selector_l{
+    position: absolute;
+    top: 464px;
+    left: 303px;
+}
+.left_selector_c{
+    position: absolute;
+    top: 464px;
+    left: 501px;
+}
+.left_selector_r{
+    position: absolute;
+    top: 464px;
+    left: 697px;
+}
+select{
     border-color:  #eaeaea;
     box-sizing: border-box;
-    background-color:  #ffffff;
+    border-radius: 0;
     width: 144px;
     height: 35px;
+    -webkit-appearance: none;
+    background: url(../icons/down.png) right center no-repeat;
+    line-height: 1em;
+    padding: 0 10px 0 10px;
+    outline: none;
+}
+.left_selector{
+    position: absolute;
+    top: 490px;
+    left: 302px;
+}
+.central_selector{
+    position: absolute;
+    top: 490px;
+    left: 499px;
+}
+.right_selector{
+    position: absolute;
+    top: 490px;
+    left: 696px;
+}
+option{
+    text-transform: uppercase;
+}
+.btn {
+    display: flex;
+    position: absolute;
+    top: 553px;
+    left: 303px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:  #ef5b70;
+    box-sizing: border-box;
+    background-color:  #ffffff;
+    width: 537px;
+    height: 55px;
+    color: #ef5b70;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: url(../icons/chart.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.btn span {
+    margin: auto;
+}
+
+.btn:hover {
+    background-color: #b9b9b9;
+}
+
+.btn:active {
+    background-color: #5e5e5e;
 }
 footer {
     width: 100%;
