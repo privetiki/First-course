@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>shopping_cart</title>
-    <link rel="stylesheet" href="css/shopping_cart_c.css">
+    <link rel="stylesheet" href="css/shopping_cart_sass.css">
 </head>
 <body>
 <header>
@@ -15,7 +15,7 @@
         <div class="top_search">
             <form action="" method="post" class="search">
                 <input type="search" name="" placeholder="search" class="input" />
-                <input  class="submit" />
+                <input  class="submit">
             </form>
         </div>
         <a href="#" class="header_btn">
@@ -75,51 +75,52 @@
                         <a href="singe_page.html">
                           <img src="img/girl1.jpg" alt="coat" width="100" height="115">
                         </a>
-                    <td>
-                        <span class="item_name">mango people t-shirt</span>
+                    <td class="item_name">
+                        <span>mango people t-shirt</span>
                         <span class="item_description">Color: red</span>
+                        <span class="item_description">Size: M</span>
                     </td>
                     <td><span class="price">$150</span></td>
                     <td>
-                        <div class="quantity_input">
-                            <input type="text">
-                        </div>
+                        <input type="number" name="quantity" min="1" max="100" value="1">
                     </td>
                     <td><span class="price">free</span></td>
                     <td><span class="price">$300</span></td>
                     <td><a href="#" class="cart_delete"></a></td>
                 </tr>
                 <tr>
-                    <td><img src="img/cart0ff.png" alt="coat" width="100" height="115"></td>
+                    <td>
+                        <a href="singe_page.html">
+                            <img src="img/girl1.jpg" alt="coat" width="100" height="115">
+                        </a>
                     <td>
                         <span class="item_name">mango people t-shirt</span>
                         <span class="item_description">Color: red</span>
                     </td>
                     <td><span class="price">$150</span></td>
                     <td>
-                        <div class="quantity_input">
-                            <input type="text">
-                        </div>
+                        <input type="number" name="quantity" min="1" max="100">
                     </td>
                     <td><span class="price">free</span></td>
-                    <td><span class="price">300</span></td>
-                    <td><span class="price">free</span></td>
+                    <td><span class="price">$300</span></td>
+                    <td><a href="#" class="cart_delete"></a></td>
                 </tr>
                 <tr>
-                    <td><img src="img/cart0ff.png" alt="coat" width="100" height="115"></td>
+                    <td>
+                        <a href="singe_page.html">
+                            <img src="img/girl1.jpg" alt="coat" width="100" height="115">
+                        </a>
                     <td>
                         <span class="item_name">mango people t-shirt</span>
                         <span class="item_description">Color: red</span>
                     </td>
                     <td><span class="price">$150</span></td>
                     <td>
-                        <div class="quantity_input">
-                            <input type="text">
-                        </div>
+                        <input type="number" name="quantity" min="1" max="100">
                     </td>
                     <td><span class="price">free</span></td>
-                    <td><span class="price">300</span></td>
-                    <td><span class="price">free</span></td>
+                    <td><span class="price">$300</span></td>
+                    <td><a href="#" class="cart_delete"></a></td>
                 </tr>
               </tbody>
             </table>
@@ -134,28 +135,149 @@
             <div class="order_details">
                 <div class="shipping_details">
                     <p class="ship_addr">shipping address</p>
-                    <input type="text" placeholder="Bangladesh">
+                    <select name="countries" id="Bangladesh"></select>
                     <input type="text" placeholder="State">
                     <input type="text" placeholder="Postecode/Zip">
-                    <input type="submit">
+                    <input type="submit" value="get a quote">
                 </div>
                 <div class="shipping_details">
                     <p class="ship_addr">coupon discount</p>
                     <p class="code">Enter your coupon code if you have one</p>
                     <input type="text" placeholder="Code">
-                    <input type="submit">
+                    <input type="submit" value="Apply coupon">
                 </div>
                 <div class="shipping_details">
                     <div class="shipping_details_pink">
-                        <p class="s_t">subtotal $900</p>
-                        <p class="g_t">Grandtotal<span>$900</span></p>
+                        <p class="s_t">subtotal  $900</p>
+                        <p class="g_t">Grandtotal <span>$900</span></p>
                         <hr class="checkout_hr">
-                        <a href="#" ><div class="checkout_btn">proceed to checkout</div></a>
+                        <a href="#" class="checkout_btn">proceed to checkout</a>
                     </div>
                 </div>
             </div>
         </form>
     </section>
 </main>
+<footer>
+    <div class="footer_top_back">
+        <div class="footer_top_background">
+            <div class="footer_top">
+                <div class="footer_top_left">
+                    <img src="img/circle2.png" alt="dude">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Culpa dolorem fugiat minima quidem. Ab ducimus
+                        ipsam iusto minus neque, obcaecati!
+                    </p>
+                    <p>Name AGE</p>
+                </div>
+                <div class="footer_top_right">
+                    <h2>Subscribe</h2>
+                    <p>For our newsletters and promotions</p>
+                    <form action="form.php" method="post">
+                        <input type="email" class="footer_email_input" placeholder="INSERT EMAIL">
+                        <input type="submit" class="submit_footer" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_middle">
+        <div class="footer_middle_40">
+            <img src="icons/414e523ababc213a7b7ea0feb462d5f6.jpg" alt="omni">
+            <h3>Omnipollo</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Animi assumenda at cumque exercitationem itaque odit
+                veniam. Aliquid animi aperiam aspernatur consectetur
+                culpa cum, delectus dolor dolores fuga fugit, nihil non
+                quis saepe sunt tempora.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Animi assumenda at cumque exercitationem itaque odit
+                veniam. Aliquid animi aperiam aspernatur consectetur
+                culpa cum, delectus dolor dolores fuga fugit, nihil non
+                quis saepe sunt tempora.
+            </p>
+        </div>
+        <div class="footer_middle_20">
+            <p>COMPANY</p>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Shop</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">How it works</a>
+                </li>
+                <li>
+                    <a href="#">Contat</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_middle_20">
+            <p>Information</p>
+            <ul>
+                <li>
+                    <a href="#">Condition</a>
+                </li>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#">How to buy</a>
+                </li>
+                <li>
+                    <a href="#">How to sell</a>
+                </li>
+                <li>
+                    <a href="#">Promotion</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_middle_20">
+            <p>Shop category</p>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Women</a>
+                </li>
+                <li>
+                    <a href="#">Men</a>
+                </li>
+                <li>
+                    <a href="#">Kids</a>
+                </li>
+                <li>
+                    <a href="#">Brows all</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer_buttom_back">
+        <div class="footer_buttom">
+            <p>&copy; 2017 Brand All Rights Reserved.</p>
+            <a href="index.html">
+                <div class="footer_soc_icons">
+                    <img src="icons/p.png" alt="">
+                </div>
+            </a>
+            <div class="footer_soc_icons">
+                <img src="icons/f.png" alt="">
+            </div>
+            <div class="footer_soc_icons">
+                <img src="icons/t.png" alt="">
+            </div>
+            <div class="footer_soc_icons">
+                <img src="icons/g.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

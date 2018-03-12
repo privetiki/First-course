@@ -141,7 +141,7 @@ main{
 .morda{
     width:1600px;
     height: 613px;
-    background: url("img/Layer 24.jpg");
+    background: url("../img/Layer 24.jpg");
     margin: 0 auto;
     position: relative;
 }
@@ -300,7 +300,7 @@ main a{
     width: 1140px;
     height: 529px;
     margin: 80px auto 100px auto;
-    background: url("img/Image.jpg") ;
+    background: url("../img/Image.jpg") ;
 }
 .main_banner_offer{
     width: 310px;
@@ -369,7 +369,7 @@ footer {
     background-color: #e6e6e6;
 }
 .footer_top_background{
-    background: url("img/Layer 41.jpg") ;
+    background: url("../img/Layer 41.jpg") ;
     width: 1600px;
     margin: 0 auto;
 }

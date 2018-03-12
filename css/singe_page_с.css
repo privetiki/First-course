@@ -176,7 +176,7 @@ main{
     margin: 0 auto;
 }
 .unit_card{
-    margin: -86px auto 200px auto;
+    margin: -86px auto 120px auto;
     border: 1px solid #eaeaea;
     box-sizing: border-box;
     background-color:  #ffffff;
@@ -211,6 +211,10 @@ main{
     width: 537px;
     margin: 67px auto 0 auto;
 }
+.unit_card_det{
+    width: 340px;
+    margin: 0 auto;
+}
 .unit_card_details{
     display: inline-block;
     color:  #b9b9b9;
@@ -218,9 +222,11 @@ main{
     font-weight: 700;
     line-height: 24px;
     text-align: center;
-    margin-left: 350px;
+    margin-right: 44px;
     text-transform: uppercase;
-
+}
+.unit_card_details:nth-child(2n){
+    margin-right:0;
 }
 .unit_card_details span{
     color:  #2f2f2f;
@@ -319,6 +325,42 @@ option{
 
 .btn:active {
     background-color: #5e5e5e;
+}
+.items_header{
+    color:  #4d4d4d;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.main_items{
+    margin: 60px auto 0 auto;
+    width: 1141px;
+    height: 400px;
+}
+.main_items_cards{
+    width: 260px;
+    height: 364px;
+    margin: 0 32px 40px 0;
+    float: left;
+}
+.main_items_cards:nth-child(4n){
+    margin-right: 0;
+}
+.main_items_cards_description{
+    padding-left: 15px;
+}
+.main_items_cards_description p{
+
+    color:  #222222;
+    font-size: 13px;
+    font-weight: 400;
+}
+.main_items_cards_description p:nth-child(2n){
+    color:  #f16d7f;
+    font-size: 16px;
+    font-weight: 700;
 }
 footer {
     width: 100%;
